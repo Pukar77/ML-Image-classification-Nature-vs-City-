@@ -17,7 +17,7 @@ def classify_images(image):
     outcome = 'The Image belongs to ' + furniture_names[np.argmax(result)] + ' with a score of ' + str(np.max(result) * 100)
     return outcome
 
-model = tf.keras.models.load_model("C:\\Users\\PUKAR\\Desktop\\pukar\\pukar\\city_classification.keras")
+model = tf.keras.models.load_model("./city_classification.keras")
 
 uploadfile = st.file_uploader("Upload your files here", type=["jpg", "png", "jpeg", "avif"])
 
